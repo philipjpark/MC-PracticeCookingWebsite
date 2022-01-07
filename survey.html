@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<title>Survey</title>
+<link rel="stylesheet" type="text/css" href="../CSS/cookingStyles.css">
+</head>
+
+<body style="background-color: blanchedalmond;">
+
+<!-- Page Header -->
+<header>
+<h1>Cooking for Students</h1>
+<img class="imageBanner" src="Images/cookingBanner.jpg">
+</header>
+
+<!-- Navigation Bar -->
+<nav>
+<ul>
+<li><a href="home.html"> Home   </a></li>
+<li><a href="italian.html"> Italian   </a></li>
+<li><a href="indian.html">  Indian  </a></li>
+<li><a href="thai.html">  Thai  </a></li>
+<li><a href="chinese.html"> Chinese   </a></li>
+<li><a href="survey.html"> Survey   </a></li>
+</ul>
+</nav>
+
+<!-- The main content of the page -->
+<main>
+<h2>Website Survey</h2>
+<p>Please complete the information below.</p>
+    
+<form action="">
+<h3>Personal Details</h3>
+    First Name<br>
+    <input type="text" name="firstname" size="20">
+    <br>
+    Surname<br>
+    <input type="text" name="surname" size="20">
+    <br>
+    Age<br>
+    <input type="radio" name="age" value="<25" > under 25
+    <input type="radio" name="age" value="25-40"> 25-50
+    <input type="radio" name="age" value=">40"> over 50
+    <input type="radio" name="age" value="other" checked> Would rather not say.
+    <br><br>
+    
+<h3>Favourite Food</h3>
+    <div style="width:300px;float:left;padding-right:50px">
+      Select your favourite country currently featuring on the website.<br>
+      <select name="favouriteCountry" required>
+        <option value="italy">Italy</option>
+        <option value="india">India</option>
+        <option value="thailand">Thailand</option>
+        <option value="china">China</option>
+      </select>
+    </div>    
+    <div style="width:300px;float:left;padding-right:50px">
+      Select a country food you would like to see featuring on the website.<br>
+      <select name="newCountry" required>
+        <option value="vietnam">Vietnamese</option>
+        <option value="america">American</option>
+        <option value="france">French</option>
+        <option value="spain">Spanish</option>
+      </select>
+    </div>
+    <div style="clear:both;margin-top:20px">
+        <br>Describe another cooking technique you would like to see demonstrated.<br>
+        <textarea name="message" rows="5" cols="100" maxlength="500">  </textarea>
+    </div>
+    <br><br>
+    
+<h3>Please Rate the Following from 1(poor) to 5(excellent)</h3>    
+    How easy is the website to use?
+    <input type="number" name="ease" min="1" max="5" required><br>
+    How do you find the quality of the information on the website?
+    <input type="number" name="ease" min="1" max="5" required><br>
+    How tasty have you found the recipes?
+    <input type="number" name="ease" min="1" max="5" required>
+    <br><br> 
+  
+    
+<h3>Can we retain your details to help with future developments?</h3> 
+    Please select one.<br>
+    <input type="radio" name="permission" value="yes" checked> Yes
+    <input type="radio" name="permission" value="no"> No
+    <br><br>
+    
+    <input type="submit" onclick="alert('Form Entered')" value="Submit">
+    <br><br>
+</form>    
+</main>
+
+<!-- Page Footer -->
+<footer>
+<p>Links to famous tv chefs</p>
+<a href="https://www.jamieoliver.com"> Jamie Oliver   </a><br>
+<a href="https://www.gordonramsay.com"> Gordon Ramsay   </a><br>
+<a href="https://www.jamesmartinchef.co.uk"> James Martin   </a>
+</footer>
+
+</body>
+</html>
+
+
